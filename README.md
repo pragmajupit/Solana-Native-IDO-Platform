@@ -1,24 +1,22 @@
-Here’s a **technical README** (GitHub-style) for Parasol Finance, suited for a developer or engineering audience — based on publicly available info:
 
----
 
 # Parasol Finance Technical Overview
 
 ## Architecture & System Design
 
-* Built on **Solana**, leveraging its high throughput and low latency for IDOs, staking, and NFT logic. ([Parasol Finance][1])
+* Built on **Solana**, leveraging its high throughput and low latency for IDOs, staking, and NFT logic.
 * On-chain programs (smart contracts) likely written in **Rust** (standard for Solana programs), managing staking, NFT access keys, and IDO allocation.
-* **NFT Access Keys** serve as a tiered mechanism: specific NFT types grant different levels of IDO access, governance rights, or staking rewards. ([Nadcab Labs][2])
-* **Staking layer**: Users can stake NFTs (and/or $PSOL tokens) in a staking contract, which mints rewards (PSOL) based on staking amount & duration. ([Parasol Finance][1])
-* **Governance model**: $PSOL token holders have voting power to influence platform decisions, potentially including IDO parameters or project listings. ([NewsBTC][3])
-* **Launchpad module**: Projects can submit their token, define IDO parameters (hard cap, price, token address), and launch via a decentralized onboarding flow. ([Parasol Finance][4])
+* **NFT Access Keys** serve as a tiered mechanism: specific NFT types grant different levels of IDO access, governance rights, or staking rewards. 
+* **Staking layer**: Users can stake NFTs (and/or $PSOL tokens) in a staking contract, which mints rewards (PSOL) based on staking amount & duration. 
+* **Governance model**: $PSOL token holders have voting power to influence platform decisions, potentially including IDO parameters or project listings. 
+* **Launchpad module**: Projects can submit their token, define IDO parameters (hard cap, price, token address), and launch via a decentralized onboarding flow. 
 
 ## Smart Contract & Tokenomics
 
-* **PSOL Token**: Native governance and utility token, used for staking, governance votes, and potentially IDO access. ([Nadcab Labs][2])
-* **NFT Keys**: Unique NFT contracts that represent allocation rights; holders use these NFTs to claim IDO allocations. ([Nadcab Labs][2])
-* **Reward Emission**: Staked NFTs (or PSOL) generate PSOL rewards with a defined APR. ([Parasol Finance][1])
-* **Fair Allocation**: The IDO system is designed to avoid first-come or “whale-only” dynamics; allocations depend on NFT ownership or stake, not just time or capital. ([NewsBTC][3])
+* **PSOL Token**: Native governance and utility token, used for staking, governance votes, and potentially IDO access. 
+* **NFT Keys**: Unique NFT contracts that represent allocation rights; holders use these NFTs to claim IDO allocations.
+* **Reward Emission**: Staked NFTs (or PSOL) generate PSOL rewards with a defined APR. 
+* **Fair Allocation**: The IDO system is designed to avoid first-come or “whale-only” dynamics; allocations depend on NFT ownership or stake, not just time or capital. 
 
 ## Security & Risk Considerations
 
@@ -50,11 +48,3 @@ Here’s a **technical README** (GitHub-style) for Parasol Finance, suited for a
 
 ---
 
-**Note:** This is a *technical synthesis* based primarily on publicly available information from the Parasol website and third-party sources. For real, in-depth engineering design, one would need access to their actual smart contract code, architecture documentation, or whitepaper.
-
-If you like, I can try to reconstruct an **actual architecture diagram** (with modules & data flow) based on their documentation + industry best practices — do you want me to do that?
-
-[1]: https://parasol.build/?utm_source=chatgpt.com "Parasol Finance ($PSOL) | Community Governed Launchpad on Solana."
-[2]: https://www.nadcab.com/case-study/parasol-finance-ido-platform-development?utm_source=chatgpt.com "Parasol Finance IDO Platform Development on Solana"
-[3]: https://www.newsbtc.com/press-releases/parasol-finance-psol-is-now-available-for-trading-on-lbank-exchange/?utm_source=chatgpt.com "Parasol Finance (PSOL) Is Now Available for Trading on LBank Exchange | NewsBTC"
-[4]: https://parasol.build/projects/submit?utm_source=chatgpt.com "Parasol Finance | Projects"
